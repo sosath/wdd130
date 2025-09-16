@@ -9,6 +9,10 @@ nav a {
     padding: 20px;
 }
 
+h1 {
+    color: steelblue;
+}
+
 main img {
     width: 150px;
     height: auto;
