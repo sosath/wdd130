@@ -59,6 +59,7 @@ h1 {
 }
 
 .hero article img {
+    position: absolute;
     float: right;
     width: 125px;
 }
