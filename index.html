@@ -1,4 +1,4 @@
-<!-- 24 September 2025 -->
+<!-- 02 Octuber 2025 -->
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -13,13 +13,13 @@
 
 <body>
 
-    <header>
-      <nav>
-        <a href="https://linkedin.com/in/thomas-sl">Home</a>
-        <a href="https://linkedin.com/in/thomas-sl">Rafting Website</a>
-        <a href="https://linkedin.com/in/thomas-sl">Profile</a>
-      </nav>
-    </header>
+  <header>
+    <nav>
+      <a href="https://linkedin.com/in/thomas-sl">HOME</a>
+      <a href="https://linkedin.com/in/thomas-sl">RAFTING WEBSITE</a>
+      <a href="https://linkedin.com/in/thomas-sl">PROFILE</a>
+    </nav>
+  </header>
 
     <div class="grid">
       
@@ -48,14 +48,20 @@
         <h2>Santa Cruz</h2>
         <img src="images/catedral_scz.jpg" alt="Catedral in Santa Cruz, Bolivia">
         <p>Santa Cruz de la Sierra is the commercial center of Bolivia and the capital of the Santa Cruz Department. It is located on the Piraí River, in the tropical lowlands east of the Andes.</p>
+        <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur aliquam, fugit sit animi ab ullam nostrum, eveniet nobis sapiente cumque distinctio dolorem est sunt quisquam iusto laborum! Veniam, et recusandae!</P>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sapiente in est. Quos ipsam nobis unde voluptas suscipit, nihil soluta odio. Nisi veritatis minus, eligendi est molestiae similique ullam dolore.</P>
       </aside>
 
-  </div>
+    </div>
 
   <footer>
-    <p>&copy2025 🌴 Thomas Sosa Lijeron 🌴 Santa Cruz, Bolivia</p>
+    <p id="author">&copy; <span id="year"></span> Thomas Sosa Lijeron</p>
+    <p>Santa Cruz, Bolivia | Web Fundamentals at BYU Patwhay Worldwide</p>
   </footer>
-
+  <script>
+    let year = new Date().getFullYear();
+    document.getElementById("year").innerHTML = year;
+  </script>
 </body>
 
 </html>

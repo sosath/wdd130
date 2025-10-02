@@ -4,45 +4,32 @@
     box-sizing: border-box;
 }
 
-a {
+nav a {
+    display: block;
     color: steelblue;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: rgb(180, 180, 180);
 }
 
-header,
-.grid,
-footer {
-    max-width: 1200px;
-    margin: 0 auto;
+a:hover {
+    background-color: rgb(130, 163, 190);
 }
 
 nav {
     background-color: steelblue;
     padding: 1rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-}
-
-nav a {
-    display: block;
-    padding: 0.5rem;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: white;
+    flex-direction: row;
 }
 
 main {
     max-width: 50rem;
-    grid-column: 2/3;
     margin: 1rem 0;
     background: whitesmoke;
     color: black;
-}
-
-h1 {
-    border-bottom: 1px solid var(steelblue);
-    color: steelblue;
 }
 
 main img {
@@ -50,7 +37,29 @@ main img {
     height: auto;
     box-shadow: 0 0 30px gray;
     float: right;
-    margin: 0 0 1rem 1rem
+    margin: 1rem 0 1rem 1rem
+}
+
+h1 {
+    border-bottom: 2px solid var(steelblue);
+    padding-bottom: 2px;
+    color: steelblue;
+}
+
+aside {
+    position: relative;
+}
+
+aside img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 80px;
 }
 
 p {
@@ -58,34 +67,29 @@ p {
     color: black;
 }
 
-aside {
-    width: 30rem;
-    text-align: center;
-    position: relative;
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
 }
 
-aside h2 {
-    position: absolute;
-    bottom: 305px;
-    left: 180px;
-}
-
-aside img {
-    width: 445px;
-    height: auto;
-    display: block;
-}
-
-ul {
-    list-style: none;
-    padding: 1rem;
+.grid {
+    display: grid;
+    grid-template-columns: auto 310px;
 }
 
 footer {
     background-color: rgb(154, 184, 207);
     color: white;
-    padding: 1rem 1rem;
-    text-align: center;
+    padding: 2rem 1rem;
+}
+
+#author {
+    color: blue;
+}
+
+ul {
+    list-style: none;
+    padding: 1rem;
 }
 
 /* Class Selectors */
