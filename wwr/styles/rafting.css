@@ -1,16 +1,40 @@
+/* CONTACT.CSS */
 :root {
-    --primary-color: #055a05;
-    --secondary-color: rgb(164, 179, 164);
-    --accent-color: #264653;
-    --accent2-color: #d8c38d;
-    --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: Arial, Helvetica, sans-serif;
+  --primary-color: #055a05;
+  --secondary-color: rgb(164, 179, 164);
+  --accent-color: #264653;
+  --accent2-color: #d8c38d;
+  --heading-font: "Times New Roman", "Georgia", serif;
+  --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--accent-color);
+  background-color: white;
+}
+
+header, main, footer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.6;
+  margin: 8px 0;
 }
 
 header {
@@ -41,99 +65,14 @@ header nav a {
 }
 
 a {
-    display: block;
-    padding: 9px 10px;
-    background-color: var(--secondary-color);
-    border-radius: 8px;
+  display: block;
+  padding: 9px 10px;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
 }
 
 a:hover {
-    background-color: var(--accent2-color);
-}
-
-body {
-    font-family: var(--body-font);
-    color: var(--accent-color);
-}
-
-header, main, footer {
-    width: 840px;
-    margin: 0 auto;
-}
-
-h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    text-align: center;
-}
-
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-.hero {
-    position: relative;
-}
-
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.85); 
-    margin: 16px; 
-    padding: 16px;
-    border-radius: 8px;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-.hero article img {
-    float: right;
-    width: 150px;
-    height: 105px;
-    margin-left: 15px;
-    border-radius: 8px;
-}
-
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 1;
-    background-color: var(--accent-color);
-    color: white;
-}
-
-.adventure-gallery {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 10px 10px;
-}
-
-.adventure-gallery figure {
-  flex: 1;
-  text-align: center;
-}
-
-.adventure-gallery img {
-  width: 100%;
-  max-width: 150px;
-  height: auto;
-  border-radius: 8px;
+  background-color: var(--accent2-color);
 }
 
 footer {
@@ -157,45 +96,161 @@ footer .socialmedia img {
   height: 50px;
 }
 
-.history {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px; 
-    align-items: start;
-    text-align: justify;
-    margin: 1px auto;
-    background-color: whitesmoke;
-    border-radius: 8px;
+.contact-info {
+  background-color: whitesmoke;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-align: center;
 }
 
-.history h2 {
-    grid-column: 1 / 4;
-    text-align: center;
+.company-details {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
 }
 
-.history p:first-of-type {
-    grid-column: 1 / 2;
-    margin: 0; 
-    padding: 0;
+.company-details p {
+  margin: 6px 0;
+  flex: 1 1 200px;
+  text-align: center;
 }
 
-.history .center-content {
-    grid-column: 2 / 3;
-    text-align: center;
+.map {
+  margin-top: 20px;
+  text-align: center;
 }
 
-.history .center-content img {
+.map iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+  border-radius: 10px;
+}
+
+.team {
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.employee-gallery {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+}
+
+.employee-gallery figure {
+  width: 30%;
+  min-width: 180px;
+}
+
+.employee-gallery img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid var(--accent-color);
+}
+
+.employee-gallery figcaption {
+  margin-top: 8px;
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+.contact-form {
+  background-color: whitesmoke;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contact-form h2 {
+  margin-bottom: 10px;
+}
+
+.contact-form form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+input, textarea, select, button {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: var(--body-font);
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.form-item input[type="radio"],
+.form-item input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+button[type="submit"] {
+  background-color: var(--accent-color);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  width: 50%;
+  max-width: 200px;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--primary-color);
+}
+
+
+@media (max-width: 900px) {
+  header, main, footer {
+    width: 95%;
+  }
+
+  .company-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .employee-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button[type="submit"] {
     width: 100%;
-    max-width: 200px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    outline: 1px solid var(--accent-color); 
-    border-radius: 8px;
-}
-
-.history p:last-of-type {
-    grid-column: 3 / 4;
-    margin: 0;
-    padding: 0;
+  }
 }
