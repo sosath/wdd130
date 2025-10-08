@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - White Water Rafting Adventures</title>
+  <meta name="description" content="Get in touch with White Water Rafting Adventures! Find our address, phone, email, and contact form to plan your next rafting trip.">
+  <meta name="author" content="Thomas Sosa">
+  <link rel="stylesheet" href="styles/contact.css">
+</head>
+
+<body>
+
+  <header>
+    <img src="images/logo.png" alt="White Water Rafting">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="contact-info">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you! Reach out using the information below or send us a message through our form.</p>
+
+      <div class="company-details">
+        <p><strong>Address:</strong> 123 Rapids Way, Blue River, CO 80424</p>
+        <p><strong>Phone:</strong> (555) 987-6543</p>
+        <p><strong>Email:</strong> contact@whitewaterrafting.com</p>
+      </div>
+
+      <div class="map">
+        <h2>Find Us</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d49307.3647840828!2d-106.027508!3d39.430675!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876af12dfa905061%3A0xe720e7fe11e3dd5!2sBlue%20River%2C%20Colorado%2080424%2C%20EE.%20UU.!5e0!3m2!1ses!2sbo!4v1759895544167!5m2!1ses!2sbo" 
+          width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+    <section class="team">
+      <h2>Meet Our Team</h2>
+      <div class="employee-gallery">
+        <figure>
+          <img src="images/employee1.jpg" alt="Guide John">
+          <figcaption>John Carter – Lead Rafting Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee2.jpg" alt="Guide Sarah">
+          <figcaption>Sarah Lopez – Customer Support</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.jpg" alt="Guide Mike">
+          <figcaption>Mike Thompson – Safety Instructor</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+        <div class="form-item">
+          <label for="username">Full Name:</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+
+        <div class="form-item">
+          <label for="useremail">Email:</label>
+          <input type="email" id="useremail" name="useremail" required>
+        </div>
+
+        <div class="form-item">
+          <p><strong>Purpose of your message:</strong></p>
+          <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
+          <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
+          <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+        </div>
+
+        <div class="form-item">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <div class="form-item">
+          <label><input type="checkbox" id="newsletter" name="newsletter"> Subscribe me to the monthly newsletter</label>
+        </div>
+
+        <div class="form-item">
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> 💦 Exciting Expeditions 💦 2025 Thomas Sosa</p>
+    <nav class="socialmedia">
+      <a href="https://www.facebook.com/share/1CS7vQDYYD/">
+        <img src="images/facebook.svg" alt="Facebook Icon" width="200">
+      </a>
+      <a href="https://www.instagram.com/tommytsl?igsh=N3I0djRyaXN3bGQ=">
+        <img src="images/instagram.svg" alt="Instagram Icon" width="200">
+      </a>
+      <a href="https://linkedin.com/in/thomas-sl">
+        <img src="images/linkedin.svg" alt="Linkedin Icon" width="200">
+      </a>
+    </nav>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
