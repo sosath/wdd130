@@ -1,0 +1,237 @@
+:root {
+  --color1: #905333;
+  --color2: #fbca93; 
+  --color3: #feead4;   
+  --color4: #502918;   
+  --color5: #ba1818;   
+}
+
+/* ======== ESTILOS GENERALES ======== */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color3);
+  color: var(--color4);
+}
+
+/* ======== HEADER ======== */
+header {
+  background-color: var(--color1);
+  color: var(--color3);
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.logo {
+  width: 170px;
+  border-radius: 50%;
+  margin-bottom: 0.1rem;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);    /* efecto desenfoque al pasar el mouse */
+}
+
+
+h1, h2, h3 {
+  text-align: center;
+  margin: 0.8em 0;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--color3);
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: var(--color1);
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: var(--color4);
+}
+
+/* ======== CONTENEDOR PRINCIPAL ======== */
+main {
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ======== PRODUCTOS ======== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.producto {
+  background: var(--color2);
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+.producto img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 10px;
+}
+
+.producto p {
+  margin: 6px 0;
+  font-weight: 500;
+  color: var(--color4);
+}
+
+/* ======== BOTONES ======== */
+button {
+  background-color: var(--color1);
+  color: var(--color3);
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+button:hover {
+  background-color: var(--color4);
+  color: var(--color3);
+  transform: translateY(-2px);
+}
+
+/* ======== CARRITO ======== */
+.carrito {
+  background: var(--color3);
+  padding: 25px;
+  border-radius: 16px;
+  margin-top: 50px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.carrito ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.carrito li {
+  background: var(--color2);
+  border-radius: 10px;
+  margin: 8px auto;
+  padding: 10px;
+  max-width: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color4);
+}
+
+.vaciar {
+  background-color: var(--color5);
+  color: var(--color3);
+  margin-top: 10px;
+}
+
+.vaciar:hover {
+  background-color: var(--color1);
+  color: var(--color3);
+}
+
+/* ======== QR ======== */
+.qr-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.qr {
+  width: 160px;
+  border-radius: 12px;
+  border: 3px solid var(--color1);
+  margin-top: 10px;
+}
+
+/* ======== UBICACIÓN ======== */
+.ubicacion {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.ubicacion p {
+  font-size: 1.1rem;
+  color: var(--color4);
+}
+
+/* ======== FOOTER ======== */
+.footer {
+  background-color: var(--color2);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-content p {
+  flex: 1;
+  text-align: left;
+  color: var(--color4);
+  font-size: 1rem;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-social a {
+  background-color: var(--color3);
+  padding: 10px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.footer-social a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.footer-social img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}

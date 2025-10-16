@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BLISSE</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script defer src="interaction/action.js"></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.jpg" alt="BLISSE" class="logo" />
+    <h1>¿Problemas? ¡Nada que BLISSE no pueda resolver!</h1>
+  </header>
+
+  <main>
+    <section class="productos">
+      <h2>🍰 Postres</h2>
+      <div class="grid">
+        <div class="producto">
+          <img src="images/arrozconleche.jpg" alt="Arroz con leche">
+          <h3>Arroz con leche</h3>
+          <p>Bs 5.00</p>
+          <button onclick="addToCart('Arroz con leche', 5)">Agregar</button>
+        </div>
+
+        <div class="producto">
+          <img src="images/brigadeiro.jpg" alt="Brigadeiro">
+          <h3>Brigadeiro</h3>
+          <p>Bs 2.00</p>
+          <button onclick="addToCart('Brigadeiro', 2)">Agregar</button>
+        </div>
+
+        <div class="producto">
+          <img src="images/galletas.jpg" alt="Galletas con chispas de chocolate">
+          <h3>Galletas con chispas de chocolate</h3>
+          <p>Bs 3.50</p>
+          <button onclick="addToCart('Galletas con chispas de chocolate', 3.50)">Agregar</button>
+        </div>
+
+        <div class="producto">
+          <img src="images/piedelimon.jpg" alt="Pie de limón porción">
+          <h3>Pie de limón porción</h3>
+          <p>Bs 10.00</p>
+          <button onclick="addToCart('Pie de limón porción', 10)">Agregar</button>
+        </div>
+
+        <div class="producto">
+          <img src="images/cupcakes.jpg" alt="Cupcakes">
+          <h3>Cupcakes</h3>
+          <p>Bs 6.00</p>
+          <button onclick="addToCart('Cupcakes', 6)">Agregar</button>
+        </div>
+
+        <div class="producto">
+          <img src="images/alfajor.jpg" alt="Alfajor de galletas">
+          <h3>Alfajor de galletas</h3>
+          <p>Bs 6.00</p>
+          <button onclick="addToCart('Alfajor de galletas', 6)">Agregar</button>
+        </div>
+
+        <div class="producto">
+          <img src="images/brownie.jpg" alt="Brownie">
+          <h3>Brownie</h3>
+          <p>Bs 6.00</p>
+          <button onclick="addToCart('Brownie', 6)">Agregar</button>
+        </div>
+
+        <div class="producto">
+          <img src="images/torta.jpg" alt="Torta de chocolate">
+          <h3>Torta de chocolate</h3>
+          <p>Bs 25.00</p>
+          <button onclick="addToCart('Torta de chocolate', 25)">Agregar</button>
+        </div>
+
+        <div class="producto">
+          <img src="images/tresleches.jpg" alt="Tres leches">
+          <h3>Tres leches</h3>
+          <p>Bs 10.00</p>
+          <button onclick="addToCart('Tres leches', 10)">Agregar</button>
+        </div>
+
+        <div class="producto">
+          <img src="images/minidonas.jpg" alt="3 Mini donas">
+          <h3>3 Mini donas</h3>
+          <p>Bs 10.00</p>
+          <button onclick="addToCart('3 Mini donas', 10)">Agregar</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="productos">
+      <h2>☕ Bebidas</h2>
+      <div class="grid">
+        <div class="producto">
+          <img src="images/peque.jpg" alt="Coca Cola peque">
+          <h3>Coca Cola peque</h3>
+          <p>Bs 4.00</p>
+          <button onclick="addToCart('Coca Cola peque', 4)">Agregar</button>
+        </div>
+
+        <div class="producto">
+          <img src="images/ccpersonal.jpg" alt="Coca Cola personal">
+          <h3>Coca Cola personal</h3>
+          <p>Bs 6.00</p>
+          <button onclick="addToCart('Coca Cola personal', 6)">Agregar</button>
+        </div>
+
+        <div class="producto">
+          <img src="images/spritepeque.jpg" alt="Sprite peque">
+          <h3>Sprite peque</h3>
+          <p>Bs 4.00</p>
+          <button onclick="addToCart('Sprite peque', 4)">Agregar</button>
+        </div>
+
+        <div class="producto">
+          <img src="images/spritepersonal.jpg" alt="Sprite personal">
+          <h3>Sprite personal</h3>
+          <p>Bs 6.00</p>
+          <button onclick="addToCart('Sprite personal', 6)">Agregar</button>
+        </div>
+
+        <div class="producto">
+          <img src="images/fantapeque.jpg" alt="Fanta peque">
+          <h3>Fanta peque</h3>
+          <p>Bs 4.00</p>
+          <button onclick="addToCart('Fanta peque', 4)">Agregar</button>
+        </div>
+
+        <div class="producto">
+          <img src="images/fantapersonal.jpg" alt="Fanta personal">
+          <h3>Fanta personal</h3>
+          <p>Bs 6.00</p>
+          <button onclick="addToCart('Fanta personal', 6)">Agregar</button>
+        </div>
+
+        <div class="producto">
+          <img src="images/aquariuspeque.jpg" alt="Aquarius 300ml">
+          <h3>Aquarius 300ml</h3>
+          <p>Bs 4.00</p>
+          <button onclick="addToCart('Aquarius 300ml', 4)">Agregar</button>
+        </div>
+
+        <div class="producto">
+          <img src="images/aquariuspersonal.jpg" alt="Aquarius 500ml">
+          <h3>Aquarius 500ml</h3>
+          <p>Bs 6.00</p>
+          <button onclick="addToCart('Aquarius 500ml', 6)">Agregar</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="carrito">
+      <h2>🛒 Tu Pedido</h2>
+      <ul id="cart-items"></ul>
+      <p><strong>Total:</strong> Bs <span id="total">0</span></p>
+      <button onclick="clearCart()" class="vaciar">Vaciar Carrito</button>
+
+      <div class="qr-section">
+        <h3>Paga escaneando este QR:</h3>
+        <img src="images/qr.jpg" alt="Código QR de pago" class="qr">
+      </div>
+    </section>
+
+    <section class="ubicacion">
+      <h2>📍 Nuestra Ubicación</h2>
+      <p>Barrio La Colorada, Av. La Colorada, diagonal a la calle Alma Cruceña</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d237.39584140730867!2d-63.17046331773021!3d-17.82299622371107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDQ5JzIyLjYiUyA2M8KwMTAnMTMuNSJX!5e0!3m2!1ses!2sbo!4v1760569280174!5m2!1ses!2sbo" 
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2025 BLISSE Melanie Navia Lijeron</p>
+      <div class="footer-social">
+        <a href="https://whatsapp.com" target="_blank">
+        <img src="images/whatsapp.png" alt="whatsapp">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+        <img src="images/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://tiktok.com" target="_blank">
+        <img src="images/tiktok.png" alt="Tik tok">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
